@@ -438,6 +438,9 @@ addGeneIntegrationMatrix <- function(
 
     #Log-Normalize 
     mat <- log(mat + 1) #use natural log
+
+    ## modified by JW
+    rownames(mat) <- as.character(rownames(mat))  
     seuratATAC <- Seurat::CreateSeuratObject(counts = mat[head(seq_len(nrow(mat)), 5), , drop = FALSE])
     seuratATAC[["GeneScore"]] <- Seurat::CreateAssayObject(counts = mat)
     
