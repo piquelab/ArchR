@@ -365,11 +365,11 @@ addMotifAnnotations <- function(
 
 
 
-  if ( tolower(motifSet)=="jaspar2024"){
+  if ( tolower(motifSet)=="jaspar2022"){
       
-   .requirePackage("JASPAR2024",installInfo='BiocManager::install("JASPAR2024")')
+   .requirePackage("JASPAR2022",installInfo='BiocManager::install("JASPAR2022")')
     args <- list(species = species, collection = collection)
-    motifs <- TFBSTools::getMatrixSet(JASPAR2024::JASPAR2024, args)
+    motifs <- TFBSTools::getMatrixSet(JASPAR2022::JASPAR2022, args)
     obj <- .summarizeJASPARMotifs(motifs)
     motifs <- obj$motifs
     motifSummary <- obj$motifSummary
