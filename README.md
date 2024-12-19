@@ -59,7 +59,9 @@ If any of these steps fails, you should identify the offending package and troub
 
 ArchR is currently in __beta__. We expect there to be bumps in the road. If you think you have found a bug, please first install the latest version of ArchR via
 ``` r
-devtools::install_github("GreenleafLab/ArchR", ref="master", repos = BiocManager::repositories())
+~~devtools::install_github("GreenleafLab/ArchR", ref="master", repos = BiocManager::repositories())~~
+devtools::install_github("piquelab/ArchR", ref="master", repos = BiocManager::repositories())
+
 ```
 If this does not fix your problem, please [report an issue on Github](https://github.com/GreenleafLab/ArchR/issues) with the __Bug Report__ form.
 
