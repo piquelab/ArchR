@@ -47,9 +47,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocMana
 ``` r
 devtools::install_github("piquelab/ArchR", ref="master", repos = BiocManager::repositories())
 ```
-~~``` r
-devtools::install_github("GreenleafLab/ArchR", ref="master", repos = BiocManager::repositories())`
-```~~
+~~`devtools::install_github("GreenleafLab/ArchR", ref="master", repos = BiocManager::repositories())`~~
 
 
 **Lastly, install all of the ArchR dependencies that aren't installed by default:**
